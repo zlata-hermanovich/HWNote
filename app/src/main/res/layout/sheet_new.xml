@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <EditText
+        android:id="@+id/titleNoteSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:lines="1"
+        android:layout_marginTop="30dp"
+        android:hint="@string/my_note_sheet"
+        android:imeOptions="actionDone"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dataText"
+        android:layout_below="@+id/titleNoteSheet"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        tools:text="data"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/pictureNew"
+        android:hint="@string/picture_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dataText" />
+
+    <EditText
+        android:id="@+id/textSheet"
+        android:layout_below="@+id/pictureNew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="15"
+        android:hint="@string/text"
+        android:imeOptions="actionDone"
+        android:layout_margin="30dp"
+        android:layout_marginTop="10dp"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/buttonSaveSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textSheet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/save"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
